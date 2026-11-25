@@ -15,7 +15,7 @@ enum Page
             
             Page::Home => 'Accueil',
             Page::Catalog => 'Catalogue',
-            Page::Cart => 'Panier',
+            Page::Cart => '🛒 Panier',
             Page::Orders => 'Commande',
 
             Page::Connexion => 'Connexion',

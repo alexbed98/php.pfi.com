@@ -1,24 +1,27 @@
 <header>
-    <div>
-        <a href="index.php">
-            METAL-CORE
-        </a>
+    <div class="nav-container">
 
-        <div>
-            <a href="index.php" <?= (defined('ACTIVE_PAGE') && ACTIVE_PAGE === Page::Home) ? 'active-page-link' : '' ?>>
-                Accueil
-            </a>
-            <a href="index.php" <?= (defined('ACTIVE_PAGE') && ACTIVE_PAGE === Page::Catalog) ? 'active-page-link' : '' ?>>
-                Catalogue de métaux
-            </a>
-            <a href="index.php" <?= (defined('ACTIVE_PAGE') && ACTIVE_PAGE === Page::Orders) ? 'active-page-link' : '' ?>>
-                Mes commandes
+        <div class="title-container">
+            <a href="<?= Page::Home->url() ?>" class='title'>
+                METAL-CORE
             </a>
         </div>
 
-        <div class="col-md-3 text-end">
-            <a href="cart.php" class="btn btn-outline-warning">
-                🛒 Panier <span class="badge bg-warning text-dark ms-1">0</span>
+        <div class="nav-links">
+            <a href="<?= Page::Home->url() ?>" class="<?= (defined('ACTIVE_PAGE') && ACTIVE_PAGE === Page::Home) ? 'active-page-link' : '' ?>">
+                <?= Page::Home->text() ?>
+            </a>
+            <a href="<?= Page::Catalog->url() ?>" class="<?= (defined('ACTIVE_PAGE') && ACTIVE_PAGE === Page::Catalog) ? 'active-page-link' : '' ?>">
+                <?= Page::Catalog->text() ?>
+            </a>
+            <a href="<?= Page::Orders->url() ?>" class="<?= (defined('ACTIVE_PAGE') && ACTIVE_PAGE === Page::Orders) ? 'active-page-link' : '' ?>">
+                <?= Page::Orders->text() ?>
+            </a>
+        </div>
+
+        <div class="nav-cart">
+            <a href="<?= Page::Cart->url() ?>">
+                <?= Page::Cart->text() ?> <span cart-count>0</span>
             </a>
         </div>
     </div>
