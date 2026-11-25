@@ -12,6 +12,7 @@
     align-items: center;
 }
 
+
 .home-content {
     max-width: 650px;
     padding: 40px 50px;
@@ -29,21 +30,4 @@
     color: #cccccc;
     line-height: 1.6;
     margin-bottom: 30px;
-}
-
-/* Bouton catalogue */
-.btn-primary {
-    display: inline-block;
-    background-color: #b61206;
-    color: #ffffff;
-    font-weight: bold;
-    padding: 12px 26px;
-    border-radius: 4px;
-    transition: background-color 0.2s ease, transform 0.1s ease;
-}
-
-.btn-primary:hover {
-    background-color: #d31f12;
-    color: #ffffff;
-    transform: translateY(-2px);
 }

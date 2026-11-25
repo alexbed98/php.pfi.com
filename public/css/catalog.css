@@ -1,0 +1,89 @@
+.catalog-header {
+    display: flex;
+    flex-direction: column;
+    gap:4px
+}
+
+.catalog-header p {
+    color: #a5a5a5;
+}
+
+.catalog-grid {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 25px;
+}
+
+.product-card {
+    background-color: #1a1a1a;
+    border: 1px solid #333333;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-2px);
+    border-color: #555555;
+}
+
+.product-material {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background-color: #262626;
+    border: 1px solid #444444;
+    color: #d6d6d6;
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 3px 6px;
+    border-radius: 4px;
+}
+
+.product-img {
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.product-info h3 {
+    font-size: 1.25rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.product-desc {
+    color: #8c8c8c;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+/* Métadonnées (taille et prix) */
+.product-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+    padding-top: 12px;
+    border-top: 1px dashed #2a2a2a;
+}
+
+.product-price {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.05rem;
+}

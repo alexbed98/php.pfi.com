@@ -11,17 +11,7 @@ const ACTIVE_PAGE = Page::Home;
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Metal-core</title>
-
-    <link rel="stylesheet" href="<?= CSS . '/main.css' ?>">
-    <link rel="stylesheet" href="<?= CSS . '/header.css' ?>">
-    <link rel="stylesheet" href="<?= CSS . '/footer.css' ?>">
-    <link rel="stylesheet" href="<?= CSS . '/home.css' ?>">
-
-</head>
+<?php include_once TEMPLATE . '/head.php'; ?>
 
 <body>
     <div class="body-container">

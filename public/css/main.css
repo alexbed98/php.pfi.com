@@ -35,5 +35,24 @@ a:hover {
 
 /* Conteneur du main body */
 .main-container {
-    padding: 40px 0;
+    padding: 30px 0;
+}
+
+/* bouton */
+.btn-primary {
+    display: inline-block;
+    background-color: #a51208;
+    border: 1px solid rgb(134, 134, 134);
+    color: #dbdbdb;
+    font-weight: bold;
+    padding: 12px 26px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    text-align: center;
+}
+
+.btn-primary:hover {
+    background-color: #d31f12;
+    color: #ffffff;
+    transform: translateY(-2px);
 }
