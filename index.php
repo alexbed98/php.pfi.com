@@ -19,6 +19,7 @@ const ACTIVE_PAGE = Page::Home;
     <link rel="stylesheet" href="<?= CSS . '/main.css' ?>">
     <link rel="stylesheet" href="<?= CSS . '/header.css' ?>">
     <link rel="stylesheet" href="<?= CSS . '/footer.css' ?>">
+    <link rel="stylesheet" href="<?= CSS . '/home.css' ?>">
 
 </head>
 
@@ -28,7 +29,7 @@ const ACTIVE_PAGE = Page::Home;
         <?php include_once TEMPLATE . '/header.php'; ?>
 
         <div class="main-container">
-
+            <?php include_once TEMPLATE . '/home.php' ?>
         </div>
 
         <?php include_once TEMPLATE . '/footer.php'; ?>

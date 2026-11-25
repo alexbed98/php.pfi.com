@@ -11,13 +11,6 @@ body {
     margin: 0;
 }
 
-/* Conteneur global */
-.body-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
 a {
     text-decoration: none;
     color: #e0e0e0;
@@ -25,4 +18,22 @@ a {
 
 a:hover {
     color: #b3b3b3;
+}
+
+.active-page-link {
+    color: #949494;
+    border-bottom: 2px solid #949494;
+    padding-bottom: 4px;
+}
+
+/* Conteneur global */
+.body-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Conteneur du main body */
+.main-container {
+    padding: 40px 0;
 }

@@ -1,8 +1,61 @@
 header {
     border-bottom: 1px solid #333333;
-    padding: 20px 0;
+    padding: 30px 0;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: flex-end;
 }
 
 .nav-container {
+    display: flex; 
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.nav-right {
+    display: flex;
+    align-items: flex-end;
+    gap: 25px; 
+}
+
+@font-face {
+    font-family: 'MetalRock';
+    src: url('../fonts/metal-font.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.logo {
+    font-family: 'MetalRock', sans-serif;
+    font-size: 2.3rem;
+    letter-spacing: 3px;
+
+    color: #ff1100;
+
+    -webkit-text-stroke: 1.3px #ffffff;
     
+}
+
+.nav-links a {
+    margin: 0 10px;
+}
+
+.nav-cart a {
+    text-decoration: none;
+    border: 1px solid #e0e0e0;
+    padding: 8px 14px;
+    border-radius: 4px;
+}
+
+.cart-count {
+    background-color: #dddddd;
+    color: #000000;
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 2px 8px;
+    margin-left: 5px;
 }
