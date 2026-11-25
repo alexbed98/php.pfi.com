@@ -12,7 +12,6 @@
     align-items: center;
 }
 
-
 .home-content {
     max-width: 650px;
     padding: 40px 50px;
@@ -30,4 +29,9 @@
     color: #cccccc;
     line-height: 1.6;
     margin-bottom: 30px;
+}
+
+.home-content h1,
+.home-content p {
+    text-shadow: 0 6px 12px rgba(0, 0, 0, 1);
 }
