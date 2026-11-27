@@ -23,6 +23,10 @@
                     class="<?= (defined('ACTIVE_PAGE') && ACTIVE_PAGE === Page::Orders) ? 'active-page-link' : '' ?>">
                     <?= Page::Orders->text() ?>
                 </a>
+                <a href="<?= Page::Connexion->url() ?>"
+                    class="<?= (defined('ACTIVE_PAGE') && ACTIVE_PAGE === Page::Connexion) ? 'active-page-link' : '' ?>">
+                    <?= Page::Connexion->text() ?>
+                </a>
             </div>
 
             <div class="nav-cart">
