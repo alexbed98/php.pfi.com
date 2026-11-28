@@ -10,7 +10,7 @@
         <article class="product-card">
             <div class="product-material">Acier</div>
             <div class="img-container">
-                <img src="/public/img/placeholder-metal.jpg" alt="un beau gros morceau de metal" class="product-img" />
+                <img src="/public/img/item-1.jpg" alt="un beau gros morceau de metal" class="product-img" />
             </div>
             <div class="product-info">
                 <h3>Tube rectangulaire 2 po x 1 po x 1/8 po</h3>
@@ -28,7 +28,7 @@
         <article class="product-card">
             <div class="product-material">Aluminium</div>
             <div class="img-container">
-                <img src="/public/img/placeholder-metal-2.webp" alt="un beau gros morceau de metal"
+                <img src="/public/img/item-2.webp" alt="un beau gros morceau de metal"
                     class="product-img" />
             </div>
             <div class="product-info">
@@ -46,7 +46,7 @@
         <article class="product-card">
             <div class="product-material">Cuivre</div>
             <div class="img-container">
-                <img src="/public/img/placeholder-metal-3.webp" alt="un beau gros morceau de metal"
+                <img src="/public/img/item-3.webp" alt="un beau gros morceau de metal"
                     class="product-img" />
             </div>
             <div class="product-info">
