@@ -96,7 +96,7 @@ if (!empty($_SESSION['new-account'])) {
 
 ?>
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" data-bs-theme="dark">
 
 <!--Bloc entête document-Head block-->
 <?php include_once TEMPLATE . '/head.php'; ?>
@@ -115,13 +115,12 @@ if (!empty($_SESSION['new-account'])) {
             <h1 class="py-3 mt-3">Connexion</h1>
 
             <?php if ($showNewAccountMessage): ?>
-                <div class="py=3 text-success text-center fs-4">
-                    <p>Merci d'avoir créé un compte sur le site de notre boutique.</p>
-                    <p>Cependant, le courriel sera à valider avant que vous ayez la possibilité de vous connecter.</p>
+                <div class="py-3 text-success text-center fs-4">
+                    <p>Merci d'avoir créé un compte.</p>
                 </div>
             <?php endif; ?>
 
-            <div class="fs-4 text-center my-5">Entrez vos informations de connexion.</div>
+            <div class="fs-4 my-5">Entrez vos informations de connexion.</div>
 
             <!--Formulaire authenfification-Authentication form-->
             <div class="col-md-4 mx-auto">
@@ -137,7 +136,7 @@ if (!empty($_SESSION['new-account'])) {
 
                     <div class="mb-3">
                         <label for="password" class="form-label"><span class="text-danger">* </span>Mot de passe</label>
-                        <input name="password" type="password" class="form-control" id="empasswordail"
+                        <input name="password" type="password" class="form-control" id="password"
                             aria-describedby="passwordHelp">
                         <div id="passwordHelp" class="form-text text-danger"><?= $messages['password'] ?? '' ?></div>
                     </div>
@@ -148,7 +147,7 @@ if (!empty($_SESSION['new-account'])) {
 
                 </form>
 
-                <div id="global-message" class="my-5 <?= $globalMessageColor ?>"><?= $messages['global'] ?? '' ?></dib>
+                <div id="global-message" class="my-5 <?= $globalMessageColor ?>"><?= $messages['global'] ?? '' ?></div>
 
                     <div class="py-3"><a href="<?= Page::Creation->url() ?>">Créez un compte</a></div>
                 </div>

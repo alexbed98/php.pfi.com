@@ -9,7 +9,7 @@ const ACTIVE_PAGE = Page::Orders;
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 
 <?php include_once TEMPLATE . '/head.php'; ?>
 

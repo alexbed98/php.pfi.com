@@ -23,10 +23,11 @@
                     class="<?= (defined('ACTIVE_PAGE') && ACTIVE_PAGE === Page::Orders) ? 'active-page-link' : '' ?>">
                     <?= Page::Orders->text() ?>
                 </a>
-                <a href="<?= Page::Connexion->url() ?>"
-                    class="<?= (defined('ACTIVE_PAGE') && ACTIVE_PAGE === Page::Connexion) ? 'active-page-link' : '' ?>">
-                    <?= Page::Connexion->text() ?>
-                </a>
+                <?php if (IS_AUTH) : ?>
+                        <a class="nav-link" href="<?= Page::Logout->url() ?>"><?= Page::Logout->text() ?></a>
+                        <?php else : ?>
+                        <a class="nav-link <?= ACTIVE_PAGE === Page::Connexion ? 'active-page-link' : '' ?>" href="<?= Page::Connexion->url() ?>"><?= Page::Connexion->text() ?></a>
+                        <?php endif; ?>
             </div>
 
             <div class="nav-cart">
